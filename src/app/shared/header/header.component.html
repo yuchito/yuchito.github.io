@@ -1,25 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['home']">My Personal Blog</a>
-    <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" [routerLink]="['home']">Home</a>
-        </li>
-        <li class="nav-item"  routerLinkActive="active">
-          <a class="nav-link" [routerLink]="['about']">About</a>
-        </li>
-      </ul>
+<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a role="button"
+         #navBurger
+         class="navbar-burger burger"
+         aria-label="menu"
+         aria-expanded="false"
+         data-target="myNavBarMenus"
+         (click)="toggleNavbar()"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="myNavBarMenus" #navMenu>
+      <div class="navbar-start">
+        <a class="navbar-item" [routerLink]="['home']" [routerLinkActive]="['is-active']">
+          Who am I?</a>
+        <!--a class="navbar-item" [routerLink]="['projects']" [routerLinkActive]="['is-active']">Projects</a>
+        <a class="navbar-item" [routerLink]="['experiences']" [routerLinkActive]="['is-active']">Experiences</a-->
+        <a class="navbar-item" [routerLink]="['articles']" [routerLinkActive]="['is-active']">Blog</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" [routerLink]="['about']"><strong>Get in touch</strong></a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <div class="field">
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>En</option>
+                  <option>Fr</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

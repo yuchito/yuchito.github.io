@@ -1,0 +1,14 @@
+{
+  "id": "1",
+  "title": {
+    "rendered": "Hello Community"
+  },
+  "content": {
+    "rendered": "Welcome to my angular blog, this is just a test"
+  },
+  "excerpt": {
+    "rendered": "Welcome to my angular blog"
+  },
+  "date": "2021-01-19T06:15:27.479Z",
+  "slug": "hello-angular"
+}

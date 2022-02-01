@@ -1,0 +1,14 @@
+{
+  "id": "3",
+  "title": {
+    "rendered": "Lazy loading in Angular"
+  },
+  "content": {
+    "rendered": "Add lazy loading to your Angular app"
+  },
+  "excerpt": {
+    "rendered": "Second article"
+  },
+  "date": "2021-01-19T06:15:27.479Z",
+  "slug": "slug"
+}

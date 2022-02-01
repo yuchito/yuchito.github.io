@@ -1,3 +1,14 @@
-.bg-dark {
-    background: #000 !important;
+.navbar {
+  box-shadow: 0 1px 0 0 !important;
+
+  .navbar-item {
+    &.is-active {
+      color: #00d1b2 !important;
+      font-weight: bold;
+    }
+  }
+
+  a:hover {
+    color: #00d1b2;
+  }
 }

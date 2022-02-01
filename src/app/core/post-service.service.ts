@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of, Subject } from 'rxjs';
-import { tap } from "rxjs/operators";
+import { tap } from 'rxjs/operators';
 import { IPost } from '../post.model';
 
 const API_URL = 'http://demo2921796.mockable.io/';
@@ -18,11 +18,11 @@ export class PostService {
 
   getPosts(): Observable<IPost[]> {
     // local caching
-    if(this.posts) {
+    if (this.posts) {
       return of(this.posts);
     }
 
-    return this.httpClient.get<IPost[]>(`${API_URL}posts`)
+    return this.httpClient.get<IPost[]>('../assets/data/posts.json')
       .pipe(
         tap(
           posts =>
@@ -31,16 +31,16 @@ export class PostService {
       );
   }
 
-  getPost(id: number) {
+  getPost(id: number): void {
     // local caching
-    if(this.posts) {
+    if (this.posts) {
       const post = this.posts.find(p => p.id === id);
-      if(post) {
+      if (post) {
         this.post$.next(post);
       }
     }
 
-    this.httpClient.get<IPost>(`${API_URL}post/${id}`)
+    this.httpClient.get<IPost>(`../assets/data/post_${id}.json`)
     .subscribe(post => this.post$.next(post));
   }
 }

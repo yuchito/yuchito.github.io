@@ -8,7 +8,7 @@ import { routerTransition } from './animations';
   animations: [ routerTransition ]
 })
 export class AppComponent {
-  getOutlet(o) {
+  getOutlet(o): any {
     return o.activatedRouteData.routeState;
   }
 }

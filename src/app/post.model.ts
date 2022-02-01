@@ -3,10 +3,10 @@ export interface IPost {
   title: {
     rendered: string;
   };
-  content : {
+  content: {
     rendered: string;
   };
-  excerpt : {
+  excerpt: {
     rendered: string;
   };
   date: Date;
