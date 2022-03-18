@@ -6,9 +6,7 @@ import { IPost } from '../post.model';
 
 const API_URL = 'http://demo2921796.mockable.io/';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class PostService {
 
   posts: IPost[];
