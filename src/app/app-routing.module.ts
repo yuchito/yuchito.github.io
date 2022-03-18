@@ -22,6 +22,7 @@ const routes: Routes = [
     QuicklinkModule,
     RouterModule.forRoot(routes, {
       preloadingStrategy: QuicklinkStrategy,
+      scrollPositionRestoration: 'enabled'
   })],
   exports: [RouterModule]
 })

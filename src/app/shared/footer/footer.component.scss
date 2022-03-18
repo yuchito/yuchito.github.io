@@ -1,0 +1,35 @@
+.footer__container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.footer__big_container {
+  background-color: #3e8ed0;
+  padding: 5rem 0 10rem 0;
+}
+
+.footer__small_container {
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footer__title {
+  &,
+  li {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+  li:hover {
+    cursor: pointer;
+  }
+}
+
+.footer__social_media {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
