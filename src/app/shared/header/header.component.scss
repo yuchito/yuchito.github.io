@@ -1,14 +1,15 @@
 .navbar {
-  box-shadow: 0 1px 0 0 !important;
+  border-bottom: 0.01em solid rgb(204, 204, 204);
 
   .navbar-item {
     &.is-active {
-      color: #00d1b2 !important;
+      color: #3e8ed0 !important;
       font-weight: bold;
     }
   }
 
-  a:hover {
-    color: #00d1b2;
+  span:hover {
+    color: #3e8ed0;
+    cursor: pointer;
   }
 }

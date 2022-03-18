@@ -12,8 +12,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  scroll(el: HTMLElement): void {
-    el.scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});
-  }
 }

@@ -19,19 +19,23 @@
 }
 
 @keyframes discover_flashing {
-  0%{
-    opacity: 1.0;
+  0% {
+    opacity: 1;
   }
-  25%{
+  25% {
     opacity: 0.6;
   }
-  50%{
+  50% {
     opacity: 0.3;
   }
-  75%{
+  75% {
     opacity: 0.6;
   }
-  100%{
-    opacity: 1.0;
+  100% {
+    opacity: 1;
   }
+}
+
+.container {
+  padding: 7rem 15rem 7rem 15rem;
 }

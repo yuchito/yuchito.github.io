@@ -15,31 +15,11 @@
       </a>
     </div>
     <div class="navbar-menu" id="myNavBarMenus" #navMenu>
-      <div class="navbar-start">
-        <a class="navbar-item" [routerLink]="['home']" [routerLinkActive]="['is-active']">
-          Who am I?</a>
-        <!--a class="navbar-item" [routerLink]="['projects']" [routerLinkActive]="['is-active']">Projects</a>
-        <a class="navbar-item" [routerLink]="['experiences']" [routerLinkActive]="['is-active']">Experiences</a-->
-        <a class="navbar-item" [routerLink]="['articles']" [routerLinkActive]="['is-active']">Blog</a>
-      </div>
       <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-primary" [routerLink]="['about']"><strong>Get in touch</strong></a>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <div class="field">
-            <div class="control">
-              <div class="select">
-                <select>
-                  <option>En</option>
-                  <option>Fr</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
+        <span class="navbar-item" [routerLink]="['home']" [routerLinkActive]="['is-active']">Home</span>
+        <span class="navbar-item" [routerLink]="['about']" [routerLinkActive]="['is-active']">About</span>
+        <span class="navbar-item" [routerLink]="['articles']" [routerLinkActive]="['is-active']">Blog</span>
+        <span class="navbar-item" [routerLink]="['contact']" [routerLinkActive]="['is-active']">Contact</span>
       </div>
     </div>
   </div>
