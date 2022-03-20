@@ -4,19 +4,22 @@
       <div class="card flex-md-row h-md-250 mb-4 shadow-sm">
         <div class="card-body align-items-start d-flex flex-column">
           <h2 class="mb-0">
-            <a class='text-dark'
-               [routerLink]="['/post', post.id, post.slug]">
+            <a
+              class="text-dark"
+              [routerLink]="['/articles', 'details', post.id, post.slug]"
+            >
               {{ post.title.rendered }}
             </a>
           </h2>
           <div class="mb-1 text-muted">
             {{ post.date | date }}
           </div>
-          <p class="card-text mb-auto"
-             [innerHTML]="post.excerpt.rendered"
+          <p class="card-text mb-auto" [innerHTML]="post.excerpt.rendered"></p>
+          <a
+            [routerLink]="['/articles', 'details', post.id, post.slug]"
+            style="color: blue"
+            >Continue reading!!</a
           >
-          </p>
-          <a [routerLink]="['/post', post.id, post.slug]" style="color: blue">Continue reading!!</a>
         </div>
       </div>
     </div>

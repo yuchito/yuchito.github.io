@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PostService } from '../core/post-service.service';
-import { IPost } from '../post.model';
+import { PostService } from 'src/app/@core/services/post-service.service';
 
 @Component({
-  selector: 'app-post',
-  templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  selector: 'app-blog-articles-details',
+  templateUrl: './blog-articles-details.component.html',
+  styleUrls: ['./blog-articles-details.component.scss']
 })
-export class PostComponent implements OnInit {
+export class BlogArticlesDetailsComponent implements OnInit {
 
   post$ = this.postService.post$;
 
@@ -23,4 +22,5 @@ export class PostComponent implements OnInit {
       this.postService.getPost(params.id);
     });
   }
+
 }
