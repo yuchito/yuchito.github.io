@@ -1,0 +1,22 @@
+.about__container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  padding-top: 4rem;
+}
+
+.about__subcontainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+
+.about__summary {
+  p {
+    margin: 0 0 1.45rem;
+    padding: 0;
+  }
+  line-height: 1.6;
+}

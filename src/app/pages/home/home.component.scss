@@ -1,0 +1,116 @@
+.home__container {
+  padding: 4rem 1rem;
+  max-width: 850px;
+  margin: 0px auto;
+}
+
+.home__skills_container {
+  padding-top: 2.25rem;
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 15rem;
+    margin: 0px auto;
+  }
+
+  img {
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  figure {
+    margin: 0px auto 1rem;
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+  h2,
+  h4 {
+    padding: 0.25rem 15rem;
+  }
+}
+
+.home__projects_container {
+  padding-top: 2.25rem;
+
+  h2,
+  h4 {
+    padding: 0.25rem 15rem;
+  }
+
+  .repos_wrapper {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 15rem;
+    grid-template-rows: repeat(2, 8fr);
+  }
+
+  .repository {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 5px 0px,
+      rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 3px 1px -2px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .repository:hover {
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  .repository_name {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .repository_description {
+    padding: 1rem 0;
+  }
+  .actions {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    color: rgb(33, 33, 33);
+
+    a {
+      color: rgb(33, 33, 33);
+    }
+  }
+}
+
+.home__certifications_container {
+  padding-top: 2.25rem;
+
+  h2,
+  h4 {
+    padding: 0.25rem 15rem;
+  }
+}
+
+.see_more {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  background-color: rgb(0, 0, 0);
+  align-self: center;
+}

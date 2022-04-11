@@ -1,0 +1,104 @@
+<div class="home__container">
+  <div>
+    <h1 class="is-size-1">I'm Houssam Benhadine</h1>
+    <h3 class="subtitle mb-6" style="color: #7a7a7a">
+      Web Developer - Devops Cloud Engineer
+    </h3>
+  </div>
+  <div class="subtitle is-4 mb-5" style="color: #7a7a7a">
+    <p>I'm documenting my adventure learning Devops</p>
+    <p>
+      I'm passionate about learning new technologies, languages, and automation
+    </p>
+  </div>
+  <div class="buttons">
+    <button
+      class="button is-large"
+      style="color: #3e8ed0"
+      (click)="viewResume()"
+    >
+      View resume
+    </button>
+    <button class="button is-info is-large" routerLink="/contact">
+      Get in touch
+    </button>
+  </div>
+</div>
+
+<div class="home__skills_container">
+  <h2 class="title is-4">Skills</h2>
+  <div class="images">
+    <figure>
+      <img src="../../assets/images/undraw_coding_re_iv62.svg" />
+      <figcaption class="subtitle is-4 mt-6">Web development</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../../assets/images/undraw_going_up_re_86kg.svg" />
+      <figcaption class="subtitle is-4 mt-6">Devops skills</figcaption>
+    </figure>
+
+    <figure>
+      <img src="../../assets/images/undraw_done_checking_re_6vyx.svg" />
+      <figcaption class="subtitle is-4 mt-6">
+        Cloud services providers
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="home__projects_container">
+  <h2 class="title is-4">Projects</h2>
+  <div class="repos_wrapper">
+    <div class="repository" *ngFor="let repo of repositories">
+      <div class="repository_name">
+        <h3>{{ repo.name }}</h3>
+        <span style="color: #7a7a7a">{{ formatDate(repo.updated_on) }}</span>
+      </div>
+      <div class="repository_description">
+        <p style="color: #7a7a7a">{{ repo.description }}</p>
+      </div>
+      <div class="actions">
+        <a class="mr-2" href="{{ repo.html_url }}"> Code source </a>
+        <a
+          class="ml-2"
+          href="javascript:void(0);"
+          (click)="navigateToDemo(repo.deployments_url)"
+        >
+          Deployement
+        </a>
+      </div>
+    </div>
+    <a
+      class="see_more button is-medium"
+      href="https://github.com/yuchito?tab=repositories"
+    >
+      <img class="mr-4" src="../../assets/images/github-brands.svg">
+      See more
+    </a>
+  </div>
+</div>
+
+<div class="home__certifications_container">
+  <h2 class="title is-4">Certifications</h2>
+  <div
+    style="
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 15rem;
+    "
+  >Comming soon</div>
+</div>
+
+<div class="home__certifications_container">
+  <h2 class="title is-4">Qwiklabs Skills Badges</h2>
+  <div
+    style="
+      display: grid;
+      gap: 1.2rem;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 15rem;
+    "
+  >Comming soon</div>
+</div>
